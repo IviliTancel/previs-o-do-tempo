@@ -1,0 +1,106 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Open Sans', sans-serif;
+     
+
+ }
+
+
+h2{
+    color: rgb(253, 253, 253);
+    font-size: 30px;
+}
+
+
+
+body{
+     background-image: url("https://source.unsplash.com/1600x900/?landscape");
+     background-size: cover;
+     height: 40vw;/*altura*/
+     width: 100%;/*largura*/
+     display: flex;/*permite que você arrume itens na tela*/
+     align-items: center; /* align-items serve para alinharo item para o centro*/
+     justify-content: center;/* justify-content alinha a lateral*/
+}
+
+.img{
+     width: 8%;
+     background-color: rgba(240, 248, 255, 0.671);
+     border-radius: 35px;
+} 
+
+    
+.graus{
+    color: rgb(255, 248, 248);
+    font-size: 20px;
+}
+
+.umidade{
+    color: rgb(250, 250, 250);
+    font-size: 20px;
+}
+
+.caixa-maior{
+     background-color: #000000b2;
+     
+     width: 45%; /*largura*/
+     max-width: 450px;/* estou informando que o item não pode crescer mais que 450 pixels*/
+     border-radius: 15px;/*ARREDONDAR BORDA*/
+     padding: 50px;
+}
+
+.lupa{
+    width: 80%;
+    height: 23px;
+    
+}
+button{
+    border: none;
+    background-color: rgba(243, 236, 236, 0.233);
+    cursor: pointer;/*serve para vc deixar o cursor com a mãozinha quando estiver selecionando no item*/
+    border-radius: 50%;
+    float: right;
+    
+}
+button:hover{  /*button:hover significa que eu quero uma interação quando passar o mause pelo botão*/
+    background-color: rgba(245, 238, 238, 0.692);
+ }
+input{
+    border: none;
+    background-color: rgba(0, 0, 0, 0.39);
+    color: aliceblue;
+    outline: none;/*outline serve para manipular a linha do item, nesse caso estamos tirando as linhas */
+    border-radius: 20px;
+    padding: 8px;
+    width: 50%;
+    height: 50%;
+    width: calc(100% - 50px);
+}
+
+.caixa-media{
+    margin-top: 20px;
+    
+}
+
+.cidade-tela{
+    margin-bottom: 10px;
+
+}
+
+.graus{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.umidade{
+    margin-top: 10px;
+    font-size: 15px;
+}
+ @media only screen and (max-width:620px) {
+    .caixa-maior, .caixa-media, .cidade-tela, .graus, .img, .lupa, .umidade {
+     width: 100%;   
+    }
+
+ }
